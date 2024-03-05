@@ -1,0 +1,68 @@
+// Variables
+$white-color: #fff;
+$black-color: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.search-section {
+  height: 35vh;
+  background: url(../src/assets/images/pattern-bg-desktop.png) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem 0;
+  padding-top: 2rem;
+
+  h1 {
+    font-weight: 500;
+    color: $white-color;
+  }
+
+  .search-container {
+    width: 25%;
+
+    input {
+      height: 45px;
+      width: 90%;
+      border-radius: 10px 0 0 10px;
+      border: none;
+      padding-left: 1rem;
+    }
+
+    button {
+      height: 45px;
+      width: 10%;
+      background-color: $black-color;
+      border-radius: 0 10px 10px 0;
+      border: none;
+      cursor: pointer;
+
+      i {
+        color: white;
+      }
+    }
+  }
+}
+
+.result-section {
+  border: 1px solid red;
+  background-color: $white-color;
+  position: absolute;
+  height: 200px;
+  width: 50%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leaflet-container{
+  height: 65vh;
+}
