@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import SearchIP from '../../components/search-bar/SearchIP';
-import LocationMap from '../../components/search-bar/location-map/LocationMap';
+import LocationMap from '../../components/location-map/LocationMap';
 
 export const IPContext = createContext();
 
