@@ -21,9 +21,6 @@ const SearchIP = () => {
               value={ip}
               onChange={(e) => setIp(e.target.value)}
             />
-            <button type='submit'>
-              <i className='fa-solid fa-chevron-right'></i>
-            </button>
           </form>
         </div>
       </div>
