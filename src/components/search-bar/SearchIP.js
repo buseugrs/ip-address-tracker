@@ -26,22 +26,22 @@ const SearchIP = () => {
       </div>
       <div className='result-section'>
         <div className='ip-address'>
-          <p>IP ADDRESS</p>
+          <h5>IP ADDRESS</h5>
           <p>{data ? data.ip : ''}</p>
         </div>
-        <div className='seperator'>|</div>
+        <div className='seperator'></div>
         <div className='location'>
-          <p>LOCATION</p>
+          <h5>LOCATION</h5>
           <p>{data ? `${data.location.region}, ${data.location.country}` : ''}</p>
         </div>
-        <div className='seperator'>|</div>
+        <div className='seperator'></div>
         <div className='timezone'>
-          <p>TIMEZONE</p>
+          <h5>TIMEZONE</h5>
           <p>{data ? data.location.timezone : ''}</p>
         </div>
-        <div className='seperator'>|</div>
+        <div className='seperator'></div>
         <div className='isp'>
-          <p>ISP</p>
+          <h5>ISP</h5>
           <p>{data ? data.isp : ''}</p>
         </div>
       </div>
