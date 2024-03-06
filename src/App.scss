@@ -1,6 +1,8 @@
 // Variables
 $white-color: #fff;
 $black-color: #000;
+$dark-gray-color: hsl(0, 0%, 59%);
+$very-dark-gray-color: hsl(0, 0%, 17%);
 
 * {
   margin: 0;
@@ -56,14 +58,43 @@ body {
   align-items: center;
   border-radius: 10px;
   z-index: 1;
+  h5 {
+    color: $dark-gray-color;
+    font-weight: 500;
+  }
+  p {
+    color: $very-dark-gray-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .seperator {
+    width: 1px;
+    height: 50px;
+    background-color: $dark-gray-color;
+  }
+
+  .ip-address, .location, .timezone, .isp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem 0;
+  }
 }
 
 .leaflet-container {
   height: 65vh;
   z-index: 0;
-  
 }
 
 .leaflet-bottom {
   display: none;
+}
+
+.location-map {
+  opacity: 0; /* Make the map invisible on startup */
+  transition: opacity 2s ease-in-out;
+}
+
+.location-map.loaded {
+  opacity: 1; /* Make the map visible when data is received */
 }
