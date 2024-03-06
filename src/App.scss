@@ -29,7 +29,7 @@ body {
   }
 
   .search-container {
-    width: 25%;
+    width: 25vw;
     display: flex;
     justify-content: center;
     form {
@@ -48,8 +48,8 @@ body {
 .result-section {
   background-color: $white-color;
   position: absolute;
-  height: 150px;
-  width: 50%;
+  height: 15%;
+  width: 50vw;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -74,7 +74,10 @@ body {
     background-color: $dark-gray-color;
   }
 
-  .ip-address, .location, .timezone, .isp{
+  .ip-address,
+  .location,
+  .timezone,
+  .isp {
     display: flex;
     flex-direction: column;
     gap: 0.5rem 0;
@@ -82,11 +85,16 @@ body {
 }
 
 .leaflet-container {
+  width: 100vw;
   height: 65vh;
   z-index: 0;
 }
 
 .leaflet-bottom {
+  display: none;
+}
+
+.leaflet-control-container {
   display: none;
 }
 
@@ -97,4 +105,55 @@ body {
 
 .location-map.loaded {
   opacity: 1; /* Make the map visible when data is received */
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .search-section {
+    height: 40vh;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .search-container {
+      width: 80vw;
+    }
+  }
+
+  .result-section {
+    flex-direction: column;
+    gap: 1rem 0;
+    height: 40%;
+    width: 90vw;
+    padding: 2rem 0;
+    top: 40%;
+
+    .seperator {
+      display: none;
+    }
+
+    .ip-address,
+    .location,
+    .timezone,
+    .isp {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .leaflet-container {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  .search-section {
+    .search-container {
+      width: 50vw;
+    }
+  }
+
+  .result-section {
+    width: 80vw;
+  }
 }
