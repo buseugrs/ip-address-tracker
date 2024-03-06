@@ -107,6 +107,31 @@ body {
   opacity: 1; /* Make the map visible when data is received */
 }
 
+.loader {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 32px 0 black, -32px 0 black;
+  position: relative;
+  animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #fff2;
+    box-shadow: 32px 0 #fff2, -32px 0 black;
+  }
+  50% {
+    background-color: black;
+    box-shadow: 32px 0 #fff2, -32px 0 #fff2;
+  }
+  100% {
+    background-color: #fff2;
+    box-shadow: 32px 0 black, -32px 0 #fff2;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .search-section {
     height: 40vh;
