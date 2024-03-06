@@ -6,12 +6,7 @@ import IPProvider from './context/ip-context/IPContext';
 import './App.scss';
 
 function App() {
-  return (
-    <IPProvider>
-      <SearchIP />
-      <LocationMap/>
-    </IPProvider>
-  );
+  return <IPProvider></IPProvider>;
 }
 
 export default App;
