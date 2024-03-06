@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">Multi-Step Form</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://socialify.git.ci/buseseker/multi-step-form/image?language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;theme=Light" alt="project-image"></p>
 
-## Available Scripts
+<p id="description">The Multi-Step Form project is designed to streamline the process of gathering personal information selecting monthly or yearly plans and choosing additional add-ons. At its essence the project is focused on facilitating user decision-making by providing a smooth and informative experience regarding the services available for purchase.</p>
 
-In the project directory, you can run:
+<p align="center"><img src="https://img.shields.io/badge/VSCode-%23007ACC?style=flat&amp;logo=visualstudiocode&amp;logoColor=%23007ACC&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/Node.js-%23339933?logo=nodedotjs&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/React-%2361DAFB?style=flat&amp;logo=tailwindcss&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E?logo=javascript&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/HTML5-%23E34F26?logo=html5&amp;labelColor=white" alt="shields"> <img src="https://img.shields.io/badge/TailwindCSS-%2306B6D4?logo=tailwindcss&amp;labelColor=white" alt="shields"></p>
 
-### `npm start`
+<h2>🚀 Demo</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<a href="https://multi-step-form-psi-three.vercel.app" target="_blank" rel="noreferrer"> Multi Step Form </a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Project Screenshots:</h2>
 
-### `npm test`
+*   Personal Info Page:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Desktop | Tablet | Mobile |
+| :---: | :---: | :---: |
+| <img src="https://private-user-images.githubusercontent.com/112654875/309771450-564798d9-1274-4578-8cc7-ea47be64c5d9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NTk2ODMsIm5iZiI6MTcwOTU1OTM4MywicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzcxNDUwLTU2NDc5OGQ5LTEyNzQtNDU3OC04Y2M3LWVhNDdiZTY0YzVkOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxMzM2MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03Y2FkNTBjMjVhYWY1ZTM1ODU0MzRmZjQ1Y2UzM2RjZWE0ZDAwYjJlZDUzOGE2ODYxODc4MzJiNzZjOGU2MzM2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.gQ0LQLEZX-TgpT2cgFoEh6YkJdlUkxB_Yypiek7VXeU" alt="project-screenshot">| <img src="https://private-user-images.githubusercontent.com/112654875/309774562-2f14d0b2-39e3-40c1-a206-e33e978bbbc4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjAyNjQsIm5iZiI6MTcwOTU1OTk2NCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzc0NTYyLTJmMTRkMGIyLTM5ZTMtNDBjMS1hMjA2LWUzM2U5NzhiYmJjNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxMzQ2MDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05M2E3NTc4MmE3ZGJiZDg5NDgwZGQ5ZmJkMzViYjg0ZDJmMTNjYjk3OTRiMWFmYWUxOTAzN2JlN2VlNGM4ODU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.FsVrjGhLS5JUa_vKx0R_1A0JxcV1a3doRSeHMxPy4iE" alt="project-screenshot">| <img src="https://private-user-images.githubusercontent.com/112654875/309775021-987eb3d3-0858-4aa3-854f-f22f4a12492f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjAzNDcsIm5iZiI6MTcwOTU2MDA0NywicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzc1MDIxLTk4N2ViM2QzLTA4NTgtNGFhMy04NTRmLWYyMmY0YTEyNDkyZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxMzQ3MjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YWI2ODc3MDYzZjlhYzMzNmViOTg1OGYzNTM1YzJiYTQwMWJhYjhmMDliMTg1ZjMwMmFlM2Q5NTY1MTczYTEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xTqdwcgp6qb74ejc8Vmi9jNXDL7db3pgiaY2i5ogLm4" alt="project-screenshot">|
 
-### `npm run build`
+*  Select Plan Page (Yearly):
+  
+| Desktop | Tablet | Mobile |
+| :---: | :---: | :---: |
+| <img src="https://private-user-images.githubusercontent.com/112654875/309787793-ca2cbb5e-d957-4de7-837f-72f53e7b8bef.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjI3NDksIm5iZiI6MTcwOTU2MjQ0OSwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzg3NzkzLWNhMmNiYjVlLWQ5NTctNGRlNy04MzdmLTcyZjUzZTdiOGJlZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDI3MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjIzMzNmYTZjN2JmMTAzNzAyZTI2ZDM3YjUyODY1NjJjOWYzMDI2NDYxMzcwZjQ5NDM4MWI3MjlhYzQ3YjkzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.WmqcVNuqfmnOX6Wgkt1qbxxLr_PNXCqfzMG6PZBWlcU">| <img src="https://private-user-images.githubusercontent.com/112654875/309787794-0386008d-9817-496d-afc0-634aa0baed27.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjI3NDksIm5iZiI6MTcwOTU2MjQ0OSwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzg3Nzk0LTAzODYwMDhkLTk4MTctNDk2ZC1hZmMwLTYzNGFhMGJhZWQyNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDI3MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lOTUwM2YxZGIxMGU3MWQyMjUxOGJmOGY0ZjI0MmUyYWI5NjI0YTkzMzU4N2IyZTdiY2NkYzQ3MTNiZjUyMjY3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.VS2X9MB_tjdL7h376GhYgjTUx5emtgK1kYqwDgv4Uo8" alt="project-screenshot">| <img src="https://private-user-images.githubusercontent.com/112654875/309787785-fe5cf39f-e20f-44e5-9309-f91c97f1cd6d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjI3NDksIm5iZiI6MTcwOTU2MjQ0OSwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzg3Nzg1LWZlNWNmMzlmLWUyMGYtNDRlNS05MzA5LWY5MWM5N2YxY2Q2ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDI3MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04Y2Q2NmIyOTRiNDQwZjY2MWU3MGQ0NGJmYjFhOTFhYzVjNzIzMzIxZDYwZjI3MDZkNjhjNDQ5YzQ4MmUwMTI4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GP9uXIiryFff-B7JlZoE22xMN-ypvVSh1kA1Y4P7IGI">|
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*  Select Plan Page (Monthly):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Desktop | Tablet | Mobile |
+| :---: | :---: | :---: |
+| <img src="https://private-user-images.githubusercontent.com/112654875/309789928-88e2dcf7-6065-4934-90c0-c68e73b891b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjMxNTcsIm5iZiI6MTcwOTU2Mjg1NywicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzg5OTI4LTg4ZTJkY2Y3LTYwNjUtNDkzNC05MGMwLWM2OGU3M2I4OTFiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDM0MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMjIzYjM0ZDQ1ZDdjMjAyNzJmZTg3ZTA4NzZhNTI0OGEwOGNjYTY1NjZmMmI2N2I3MWZmOWNiM2ZlNTgwNGIwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.yfTsHBMRPs9fgD_-dJmdcjtM5uJHbsJJojybfuvl_JA">| <img src="https://private-user-images.githubusercontent.com/112654875/309789929-9799cc00-926a-48d4-90ad-ebd56558d55d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjMxNTcsIm5iZiI6MTcwOTU2Mjg1NywicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzg5OTI5LTk3OTljYzAwLTkyNmEtNDhkNC05MGFkLWViZDU2NTU4ZDU1ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDM0MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMjA0ZGM3NmQ4MjQxMjFhODYxYjdlNGZhMzdkMmM3ZjlkYWQ5YWM4YjY4OTc4NDA3ZjcwNTQ0N2JkYzY2ZDMwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LNFxopf0CBIb1HQZbTxD_VsWGUfpoKzK_oqUxIHhpYs" alt="project-screenshot">| <img src="https://private-user-images.githubusercontent.com/112654875/309789921-06042891-8352-4666-9fc7-07bc40498783.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjMxNTcsIm5iZiI6MTcwOTU2Mjg1NywicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5Nzg5OTIxLTA2MDQyODkxLTgzNTItNDY2Ni05ZmM3LTA3YmM0MDQ5ODc4My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDM0MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZTA1NGFmOGM2Nzk2N2YzYzhjNjExOTE3NmRiMzkzNjI0ZDNiZWI2NTE4NjE1MzdjOGIzNDg1MmFhMGUzMzlhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.tAucU5FIfW_i_kzpYDeTThQhMb3Anton3XtkwLvvoCY">|
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*  Add-Ons Page :
 
-### `npm run eject`
+| Desktop | Tablet | Mobile |
+| :---: | :---: | :---: |
+| <img src="https://private-user-images.githubusercontent.com/112654875/309790918-2bd39354-8f33-4b93-bff1-37da128b1795.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjMzMzAsIm5iZiI6MTcwOTU2MzAzMCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzkwOTE4LTJiZDM5MzU0LThmMzMtNGI5My1iZmYxLTM3ZGExMjhiMTc5NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDM3MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ZWNjMGZkY2MzMTg1NTVkNGJkMGE2MjdkYzQzYTU2OTFiM2UxM2RlNjI4YzRkYmY2Yjg1ZjNhYzVlNTVmNDliJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.DDVXbl9cZx3hM3-ZrlgN26TdlOH_Xanae1qTPQ_ZbtM">| <img src="https://private-user-images.githubusercontent.com/112654875/309790923-b6410ce6-02f9-4216-a028-4f224c370318.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjMzMzAsIm5iZiI6MTcwOTU2MzAzMCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzkwOTIzLWI2NDEwY2U2LTAyZjktNDIxNi1hMDI4LTRmMjI0YzM3MDMxOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDM3MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYTk4ZTIyNDA3YTFhZDQ4ZTc4NDFiNmM0MDcyMTJkODdjODM0YTQxNTI5ZjY2NGM3MmI3NDAxZmQ0ZjE0NDU4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._1gPMpARxyPZdKW8_5-yyYWC0FgepEtqBpdEyhMwhK4" alt="project-screenshot">| <img src="https://private-user-images.githubusercontent.com/112654875/309790913-5b296737-d1b8-4346-b99e-f69fbf944d72.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjMzMzAsIm5iZiI6MTcwOTU2MzAzMCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzkwOTEzLTViMjk2NzM3LWQxYjgtNDM0Ni1iOTllLWY2OWZiZjk0NGQ3Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDM3MTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00ODMwZjM4NjNiMTViZjMxZmRhNWIxZGRlMjVkODYxYTdhN2Q1MGZjNDFhNTFiNzkwMzA2NDQ0ZTYwOGRhYjA2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.UtQJRvN8f-LRrkNN2cjBEtyeInz2dJw4URuNutjdN4c">|
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+*  Summary Page :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Desktop | Tablet | Mobile |
+| :---: | :---: | :---: |
+| <img src="https://private-user-images.githubusercontent.com/112654875/309792518-93fae6df-fb80-414d-85b2-149256fc0cb3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjM2MTAsIm5iZiI6MTcwOTU2MzMxMCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzkyNTE4LTkzZmFlNmRmLWZiODAtNDE0ZC04NWIyLTE0OTI1NmZjMGNiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDQxNTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MTFiYzVlMjNiNjY4YTNmODhlMzJhMjJjYTE3ODE1NTVjNTllMjVmZGViNGI3YTJkNmRkOWIzNTg1ZDU1MmNlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.uJ2xa4YPWxKWRIKzoM-40FV3jTY1criPRhHdHtsz2jw">| <img src="https://private-user-images.githubusercontent.com/112654875/309792521-374b61c5-7a08-4b56-b1a1-cdb73ebf0acc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjM2MTAsIm5iZiI6MTcwOTU2MzMxMCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzkyNTIxLTM3NGI2MWM1LTdhMDgtNGI1Ni1iMWExLWNkYjczZWJmMGFjYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDQxNTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMTljMzBmMWY4NjQ2Nzk3NTU1ZmFiMzMxMjI3Y2MzNzk3MTFjODgxM2IwNzJjZmM5YWRkOWEzZTliMzljYmNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.JzMUkXzeIGa5ikYUQTqXaCjSkpeDT1aWK0QoqY4cdzY">| <img src="https://private-user-images.githubusercontent.com/112654875/309792511-309a244a-cf45-4115-9c76-e7a8789a8888.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1NjM2MTAsIm5iZiI6MTcwOTU2MzMxMCwicGF0aCI6Ii8xMTI2NTQ4NzUvMzA5NzkyNTExLTMwOWEyNDRhLWNmNDUtNDExNS05Yzc2LWU3YTg3ODlhODg4OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQxNDQxNTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYjhhZDIxZTUzNmNjMjVjODAxZDMwNzZlYjc1NmFlN2UyYjVkODAwMDY0Y2EyNDFmNjBhNDgwMmJiNDU2ODFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.T_ZPinSgcHkYcY1L25xhDeIhOmCGFtCRqDITYhalV-c">|
+  
+<h2>🧐 Features</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Here're some of the project's best features:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*   Personal Information Form: The initial step of the process involves collecting essential personal details from the user. This includes standard fields such as name email address and contact information.
+*   Plan Selection: Users are presented with the option to choose between monthly or yearly plans based on their preferences and requirements. Each plan comes with its own set of features and pricing details.
+*   Add-On Selection: In addition to selecting a plan users have the opportunity to further customize their package by opting for various add-ons or extra services. Pricing is made according to the monthly or annual selection preferred on the plan selection page.
+*   Summary Page: Upon completion of the form users are directed to a summary page where they can review their selections. This page provides a comprehensive overview of the chosen services associated fees and the total cost of the package.
 
-## Learn More
+<h2>🛠️ Installation Steps:</h2>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p>1. Clone the repository</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+git clone https://github.com/buseseker/multi-step-form.git
+```
 
-### Code Splitting
+<p>2. Install npm modules</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm install
+```
 
-### Analyzing the Bundle Size
+<p>3. Start development server using below command</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm start
+```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+  
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
