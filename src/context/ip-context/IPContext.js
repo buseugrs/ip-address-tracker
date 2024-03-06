@@ -9,6 +9,7 @@ const IPProvider = ({ children }) => {
   const [ip, setIp] = useState('');
   const [data, setData] = useState(null);
 
+  // To get current IP 
   useEffect(() => {
     const fetchCurrentIP = async () => {
       try {
