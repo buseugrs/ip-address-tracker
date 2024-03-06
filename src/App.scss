@@ -1,6 +1,7 @@
 // Variables
 $white-color: #fff;
 $black-color: #000;
+$gray-color: #fff2;
 $dark-gray-color: hsl(0, 0%, 59%);
 $very-dark-gray-color: hsl(0, 0%, 17%);
 
@@ -111,24 +112,24 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: black;
-  box-shadow: 32px 0 black, -32px 0 black;
+  background-color: $black-color;
+  box-shadow: 32px 0 $black-color, -32px 0 $black-color;
   position: relative;
   animation: flash 0.5s ease-out infinite alternate;
 }
 
 @keyframes flash {
   0% {
-    background-color: #fff2;
-    box-shadow: 32px 0 #fff2, -32px 0 black;
+    background-color: $gray-color;
+    box-shadow: 32px 0 $gray-color, -32px 0 $black-color;
   }
   50% {
-    background-color: black;
-    box-shadow: 32px 0 #fff2, -32px 0 #fff2;
+    background-color: $black-color;
+    box-shadow: 32px 0 $gray-color, -32px 0 $gray-color;
   }
   100% {
-    background-color: #fff2;
-    box-shadow: 32px 0 black, -32px 0 #fff2;
+    background-color: $gray-color;
+    box-shadow: 32px 0 $black-color, -32px 0 $gray-color;
   }
 }
 
