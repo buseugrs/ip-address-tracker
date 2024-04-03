@@ -8,7 +8,7 @@
 
 <h2>🚀 Demo</h2>
 
-<a href="https://ip-address-tracker-psi-beige.vercel.app/" target="_blank" rel="noreferrer"> IP Address Tracker </a>
+<a href="https://ip-address-tracker-73398.web.app/" target="_blank" rel="noreferrer"> IP Address Tracker </a>
 
 <h2>Project Screenshots:</h2>
 
