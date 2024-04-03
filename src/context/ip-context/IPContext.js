@@ -6,15 +6,15 @@ import LocationMap from '../../components/location-map/LocationMap';
 export const IPContext = createContext();
 
 const IPProvider = ({ children }) => {
+  const [ip, setIp] = useState('');
   const [data, setData] = useState(null);
 
   // To get current IP
   useEffect(() => {
     const fetchCurrentIP = async () => {
       try {
-        const response = await axios.get(`https://ipinfo.io/78.190.234.231?token=e0ee8327772667`);
-        console.log(response);
-        setData(response.data);
+        const response = await axios.get(`https://api.ipify.org/?format=json`);
+        setIp(response.data.ip);
       } catch (error) {
         console.error('Error fetching IP:', error);
       }
@@ -22,9 +22,36 @@ const IPProvider = ({ children }) => {
     fetchCurrentIP();
   }, []);
 
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`https://ipinfo.io/${ip}?token=e0ee8327772667`);
+      const splitCoordinates = response.data.loc.split(',');
+      const ipData = {
+        ip: ip,
+        location: {
+          lat: parseFloat(splitCoordinates[0]),
+          lng: parseFloat(splitCoordinates[1]),
+          region: response.data.region,
+          country: response.data.country,
+          timezone: response.data.timezone,
+        },
+        isp: response.data.org,
+      };
+      setData(ipData);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  useEffect(() => {
+    if (ip) {
+      fetchData();
+    }
+  }, [ip]);
+
   // Return IPContext.Provider with appropriate values
   return (
-    <IPContext.Provider value={{ data }}>
+    <IPContext.Provider value={{ ip, setIp, data, fetchData }}>
       {children}
       <SearchIP />
       {data && <LocationMap />}

@@ -10,11 +10,8 @@ const LocationMap = () => {
 
   let position = [[51.505, -0.09]];
 
-  if (data && data.loc) {
-    const splitCoordinates = data.loc.split(',');
-    const lat = parseFloat(splitCoordinates[0]);
-    const lng = parseFloat(splitCoordinates[1]);
-    position = [lat, lng];
+  if (data && data.location) {
+    position = [data.location.lat, data.location.lng];
   } else {
     position = [[51.505, -0.09]];
   }
