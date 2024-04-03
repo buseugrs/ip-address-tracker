@@ -33,17 +33,17 @@ const SearchIP = () => {
         <div className='seperator'></div>
         <div className='location'>
           <h5>LOCATION</h5>
-          <p className={`${!data ? 'loader' : ''}`}>{data ? `${data.location.region}, ${data.location.country}` : ''}</p>
+          <p className={`${!data ? 'loader' : ''}`}>{data ? `${data.city}, ${data.country}` : ''}</p>
         </div>
         <div className='seperator'></div>
         <div className='timezone'>
           <h5>TIMEZONE</h5>
-          <p className={`${!data ? 'loader' : ''}`}>{data ? data.location.timezone : ''}</p>
+          <p className={`${!data ? 'loader' : ''}`}>{data ? data.timezone : ''}</p>
         </div>
         <div className='seperator'></div>
         <div className='isp'>
           <h5>ISP</h5>
-          <p className={`${!data ? 'loader' : ''}`}>{data ? data.isp : ''}</p>
+          <p className={`${!data ? 'loader' : ''}`}>{data ? data.org : ''}</p>
         </div>
       </div>
     </div>

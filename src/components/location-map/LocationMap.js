@@ -10,8 +10,11 @@ const LocationMap = () => {
 
   let position = [[51.505, -0.09]];
 
-  if (data && data.location) {
-    position = [data.location.lat, data.location.lng];
+  if (data && data.loc) {
+    const splitCoordinates = data.loc.split(',');
+    const lat = parseFloat(splitCoordinates[0]);
+    const lng = parseFloat(splitCoordinates[1]);
+    position = [lat, lng];
   } else {
     position = [[51.505, -0.09]];
   }
@@ -31,7 +34,13 @@ const LocationMap = () => {
 
   return (
     <div className={`location-map ${loaded ? 'loaded' : ''}`}>
-      <MapContainer dragging={false} key={`${position[0]}-${position[1]}`} center={position} zoom={10} scrollWheelZoom={false}>
+      <MapContainer
+        dragging={false}
+        key={`${position[0]}-${position[1]}`}
+        center={position}
+        zoom={10}
+        scrollWheelZoom={false}
+      >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'

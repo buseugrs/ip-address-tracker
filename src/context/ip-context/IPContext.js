@@ -6,15 +6,15 @@ import LocationMap from '../../components/location-map/LocationMap';
 export const IPContext = createContext();
 
 const IPProvider = ({ children }) => {
-  const [ip, setIp] = useState('');
   const [data, setData] = useState(null);
 
-  // To get current IP 
+  // To get current IP
   useEffect(() => {
     const fetchCurrentIP = async () => {
       try {
-        const response = await axios.get(`https://api.ipify.org/?format=json`);
-        setIp(response.data.ip);
+        const response = await axios.get(`https://ipinfo.io/78.190.234.231?token=e0ee8327772667`);
+        console.log(response);
+        setData(response.data);
       } catch (error) {
         console.error('Error fetching IP:', error);
       }
@@ -22,26 +22,9 @@ const IPProvider = ({ children }) => {
     fetchCurrentIP();
   }, []);
 
-  const fetchData = async () => {
-    try {
-      const response = await axios.get(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=at_I6dPAQagAdidJp0hosUB1e00rLhYL&ipAddress=${ip}`
-      );
-      setData(response.data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  useEffect(() => {
-    if (ip) {
-      fetchData();
-    }
-  }, [ip]);
-
   // Return IPContext.Provider with appropriate values
   return (
-    <IPContext.Provider value={{ ip, setIp, data, fetchData }}>
+    <IPContext.Provider value={{ data }}>
       {children}
       <SearchIP />
       {data && <LocationMap />}
